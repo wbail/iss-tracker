@@ -1,8 +1,5 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace IssTracker.Presentation.Api
 {
@@ -16,5 +13,8 @@ namespace IssTracker.Presentation.Api
 
         [JsonProperty("iss_position")]
         public IssPosition IssPosition { get; set; }
+
+        [JsonProperty("executed_at")]
+        public DateTime ExecutedAt { get; set; }
     }
 }

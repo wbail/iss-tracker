@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 
@@ -24,14 +25,15 @@ namespace IssTracker.Presentation.Api.Controllers
 
             using(var httpClient = new HttpClient())
             {
-                var issCurrentPosition = await httpClient.GetAsync("http://api.open-notify.org/iss-now.json");
+                var issCurrentPositionRequest = await httpClient.GetAsync("http://api.open-notify.org/iss-now.json");
 
-                var response = JsonConvert.DeserializeObject<IssTrackerResponse>(issCurrentPosition.Content.ReadAsStringAsync().Result);
+                var issCurrentPositionResult = issCurrentPositionRequest.Content.ReadAsStringAsync().Result;
+
+                var response = JsonConvert.DeserializeObject<IssTrackerResponse>(issCurrentPositionResult);
+                response.ExecutedAt = DateTimeOffset.FromUnixTimeSeconds(response.Timestamp).UtcDateTime;
 
                 return response;
             }
         }
-
-        
     }
 }
