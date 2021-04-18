@@ -13,7 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\IssTracker.Application.App\IssTracker.Application.App.csproj" />
     <ProjectReference Include="..\IssTracker.Infra.ServiceProvider\IssTracker.Infra.ServiceProvider.csproj" />
   </ItemGroup>
 
