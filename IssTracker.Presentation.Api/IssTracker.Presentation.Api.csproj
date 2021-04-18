@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\IssTracker.App.Messages\IssTracker.App.Messages.csproj" />
+    <ProjectReference Include="..\IssTracker.Application.Services\IssTracker.App.Services.csproj" />
     <ProjectReference Include="..\IssTracker.Infra.CrossCutting.DepencyInversion\IssTracker.Infra.CrossCutting.DepencyInversion.csproj" />
   </ItemGroup>
 

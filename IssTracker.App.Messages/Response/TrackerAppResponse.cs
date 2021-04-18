@@ -4,7 +4,7 @@ using System;
 
 namespace IssTracker.App.Messages.Response
 {
-    public class IssTrackerResponse
+    public class TrackerAppResponse
     {
         [JsonProperty("timestamp")]
         public long Timestamp { get; set; }

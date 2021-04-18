@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using IssTracker.App.Messages.Request;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -17,7 +18,7 @@ namespace IssTracker.Presentation.Api.Controllers
         }
 
         [HttpGet("location")]
-        public async Task<string> GetLocation()
+        public async Task<string> GetLocation(MapAppRequest mapRequest)
         {
             using(var httpClient = new HttpClient())
             {
