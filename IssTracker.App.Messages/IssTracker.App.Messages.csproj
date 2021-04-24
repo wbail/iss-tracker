@@ -5,15 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Request\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\IssTracker.Services.Models\IssTracker.Services.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Request\" />
   </ItemGroup>
 
 </Project>
