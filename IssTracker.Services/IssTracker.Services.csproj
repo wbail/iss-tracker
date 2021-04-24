@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IssTracker.App.Messages\IssTracker.App.Messages.csproj" />
+    <ProjectReference Include="..\IssTracker.Infra.ServiceProvider\IssTracker.Infra.ServiceProvider.csproj" />
+  </ItemGroup>
+
+</Project>

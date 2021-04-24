@@ -1,11 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IssTracker.App.Messages\IssTracker.App.Messages.csproj" />
+    <ProjectReference Include="..\IssTracker.Application.Services\IssTracker.App.Services.csproj" />
+    <ProjectReference Include="..\IssTracker.Infra.CrossCutting.DepencyInversion\IssTracker.Infra.CrossCutting.DepencyInversion.csproj" />
   </ItemGroup>
 
 
