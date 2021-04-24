@@ -1,4 +1,5 @@
-﻿using IssTracker.App.Services.Interfaces;
+﻿using IssTracker.App.Services;
+using IssTracker.App.Services.Interfaces;
 using IssTracker.Application.Services;
 using IssTracker.Infra.ServiceProvider;
 using IssTracker.Infra.ServiceProvider.AppSettingsConfiguration;
@@ -19,6 +20,7 @@ namespace IssTracker.Infra.CrossCutting.DepencyInversion
             services.AddScoped<ITrackerAppService, TrackerAppService>();
             services.AddScoped<ITrackerService, TrackerService>();
             services.AddScoped<IHttpClientFactory, HttpClientFactory>();
+            services.AddScoped<IMapService, MapService>();
         }
     }
 }

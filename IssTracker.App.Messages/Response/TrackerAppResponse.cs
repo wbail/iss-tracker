@@ -17,5 +17,7 @@ namespace IssTracker.App.Messages.Response
 
         [JsonProperty("executed_at")]
         public DateTime ExecutedAt { get; set; }
+
+        public MapAppResponse MapAppResponse { get; set; }
     }
 }

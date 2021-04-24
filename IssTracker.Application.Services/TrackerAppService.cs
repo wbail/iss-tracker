@@ -10,16 +10,22 @@ namespace IssTracker.Application.Services
     {
         private readonly ILogger<TrackerAppService> _logger;
         private readonly ITrackerService _trackerService;
+        private readonly IMapService _mapService;
 
-        public TrackerAppService(ILogger<TrackerAppService> logger, ITrackerService trackerService)
+        public TrackerAppService(ILogger<TrackerAppService> logger, ITrackerService trackerService, IMapService mapService)
         {
             _logger = logger;
             _trackerService = trackerService;
+            _mapService = mapService;
         }
 
         public async Task<TrackerAppResponse> GetLocationAsync()
         {
-            return await _trackerService.GetLocationAsync();
+            var result = await _trackerService.GetLocationAsync();
+
+            result.MapAppResponse = await _mapService.GetLocationAsync(result.IssPosition.Latitude, result.IssPosition.Longitude);
+
+            return result;
         }
     }
 }

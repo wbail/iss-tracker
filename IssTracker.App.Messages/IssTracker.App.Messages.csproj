@@ -12,4 +12,8 @@
     <ProjectReference Include="..\IssTracker.Services.Models\IssTracker.Services.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Request\" />
+  </ItemGroup>
+
 </Project>
