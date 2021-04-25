@@ -25,6 +25,7 @@ namespace IssTracker.Presentation.Api
             services.DependencyInjectionConfigurations(Configuration);
             services.AddControllers();
             services.AddSwaggerGen();
+            services.AddHealthChecks();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,6 +45,7 @@ namespace IssTracker.Presentation.Api
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHealthChecks("/healthcheck");
             });
 
             app.UseSwagger();
