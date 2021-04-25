@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30128.74
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Presentation", "1.Presentation", "{A00B3FD9-FBDC-4A3F-9EFC-64E55AA0D60F}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Application", "2.Application", "{E8D0BCA4-4044-4B44-9AC7-8831739D2CE9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Services", "3.Services", "{A369F8DD-FD74-4907-9009-A0CCE41AF754}"
@@ -27,21 +25,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Services", "1.Services", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Validations", "3.Validations", "{CC2B77F9-1349-4853-9CA0-AA0F4968F24A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IssTracker.App.Services", "IssTracker.Application.Services\IssTracker.App.Services.csproj", "{65CC5467-2AAF-449C-8AE8-04E15102A78C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IssTracker.App.Services", "IssTracker.Application.Services\IssTracker.App.Services.csproj", "{65CC5467-2AAF-449C-8AE8-04E15102A78C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IssTracker.App.Validations", "IssTracker.Application.Validations\IssTracker.App.Validations.csproj", "{E5CDD418-1311-46BC-9D39-72DB57B606DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IssTracker.App.Validations", "IssTracker.Application.Validations\IssTracker.App.Validations.csproj", "{E5CDD418-1311-46BC-9D39-72DB57B606DD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Messages", "2.Messages", "{D62FC05B-8FCB-4E64-A9A8-5B79662E784D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IssTracker.App.Messages", "IssTracker.App.Messages\IssTracker.App.Messages.csproj", "{FEF09C5F-FF0B-43DE-9A65-02B92C99084B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IssTracker.App.Messages", "IssTracker.App.Messages\IssTracker.App.Messages.csproj", "{FEF09C5F-FF0B-43DE-9A65-02B92C99084B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Models", "1.Models", "{30DF9BDF-697B-47B0-A42E-3F0AADBA6020}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IssTracker.Services.Models", "IssTracker.Services.Models\IssTracker.Services.Models.csproj", "{B1B4406C-4F11-4C2E-9120-6C8259EBBBFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IssTracker.Services.Models", "IssTracker.Services.Models\IssTracker.Services.Models.csproj", "{B1B4406C-4F11-4C2E-9120-6C8259EBBBFE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Services", "2.Services", "{CAA43F68-6F4A-4AE7-B536-D5D4A2FBC5FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IssTracker.Services", "IssTracker.Services\IssTracker.Services.csproj", "{2D9F3E96-C119-46F3-9CC2-73DFAFD2B56C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IssTracker.Services", "IssTracker.Services\IssTracker.Services.csproj", "{2D9F3E96-C119-46F3-9CC2-73DFAFD2B56C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Presentation", "1.Presentation", "{735805A9-8384-4BA0-A270-660DD1C9D23C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IssTracker.Services.Tests", "IssTracker.Services.Tests\IssTracker.Services.Tests.csproj", "{D734B565-4209-42A6-82D6-D66A7219F8D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IssTracker.Presentation.Api.Tests", "IssTracker.Presentation.Api.Tests\IssTracker.Presentation.Api.Tests.csproj", "{DD5151B5-4A56-4977-BBE8-E7858FC503B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -149,12 +153,36 @@ Global
 		{2D9F3E96-C119-46F3-9CC2-73DFAFD2B56C}.Release|x64.Build.0 = Release|Any CPU
 		{2D9F3E96-C119-46F3-9CC2-73DFAFD2B56C}.Release|x86.ActiveCfg = Release|Any CPU
 		{2D9F3E96-C119-46F3-9CC2-73DFAFD2B56C}.Release|x86.Build.0 = Release|Any CPU
+		{D734B565-4209-42A6-82D6-D66A7219F8D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D734B565-4209-42A6-82D6-D66A7219F8D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D734B565-4209-42A6-82D6-D66A7219F8D0}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D734B565-4209-42A6-82D6-D66A7219F8D0}.Debug|x64.Build.0 = Debug|Any CPU
+		{D734B565-4209-42A6-82D6-D66A7219F8D0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D734B565-4209-42A6-82D6-D66A7219F8D0}.Debug|x86.Build.0 = Debug|Any CPU
+		{D734B565-4209-42A6-82D6-D66A7219F8D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D734B565-4209-42A6-82D6-D66A7219F8D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D734B565-4209-42A6-82D6-D66A7219F8D0}.Release|x64.ActiveCfg = Release|Any CPU
+		{D734B565-4209-42A6-82D6-D66A7219F8D0}.Release|x64.Build.0 = Release|Any CPU
+		{D734B565-4209-42A6-82D6-D66A7219F8D0}.Release|x86.ActiveCfg = Release|Any CPU
+		{D734B565-4209-42A6-82D6-D66A7219F8D0}.Release|x86.Build.0 = Release|Any CPU
+		{DD5151B5-4A56-4977-BBE8-E7858FC503B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD5151B5-4A56-4977-BBE8-E7858FC503B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD5151B5-4A56-4977-BBE8-E7858FC503B9}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DD5151B5-4A56-4977-BBE8-E7858FC503B9}.Debug|x64.Build.0 = Debug|Any CPU
+		{DD5151B5-4A56-4977-BBE8-E7858FC503B9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DD5151B5-4A56-4977-BBE8-E7858FC503B9}.Debug|x86.Build.0 = Debug|Any CPU
+		{DD5151B5-4A56-4977-BBE8-E7858FC503B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD5151B5-4A56-4977-BBE8-E7858FC503B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD5151B5-4A56-4977-BBE8-E7858FC503B9}.Release|x64.ActiveCfg = Release|Any CPU
+		{DD5151B5-4A56-4977-BBE8-E7858FC503B9}.Release|x64.Build.0 = Release|Any CPU
+		{DD5151B5-4A56-4977-BBE8-E7858FC503B9}.Release|x86.ActiveCfg = Release|Any CPU
+		{DD5151B5-4A56-4977-BBE8-E7858FC503B9}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{F1033B4B-FBD9-4205-833B-F4F2B98F7136} = {A00B3FD9-FBDC-4A3F-9EFC-64E55AA0D60F}
+		{F1033B4B-FBD9-4205-833B-F4F2B98F7136} = {735805A9-8384-4BA0-A270-660DD1C9D23C}
 		{7C27F6A7-B2DF-40F9-8E68-354196EA8B8C} = {E4A9AF8C-51DD-44A1-8A34-CFB777E4E704}
 		{F11B44FF-04D2-4E64-AC91-2E8158223A91} = {7C27F6A7-B2DF-40F9-8E68-354196EA8B8C}
 		{3C2FACA0-8DEE-49DF-8959-D0BFA920502E} = {E4A9AF8C-51DD-44A1-8A34-CFB777E4E704}
@@ -169,6 +197,8 @@ Global
 		{B1B4406C-4F11-4C2E-9120-6C8259EBBBFE} = {30DF9BDF-697B-47B0-A42E-3F0AADBA6020}
 		{CAA43F68-6F4A-4AE7-B536-D5D4A2FBC5FF} = {A369F8DD-FD74-4907-9009-A0CCE41AF754}
 		{2D9F3E96-C119-46F3-9CC2-73DFAFD2B56C} = {CAA43F68-6F4A-4AE7-B536-D5D4A2FBC5FF}
+		{D734B565-4209-42A6-82D6-D66A7219F8D0} = {04BD1934-4F0C-4620-81C2-30AF9483290D}
+		{DD5151B5-4A56-4977-BBE8-E7858FC503B9} = {04BD1934-4F0C-4620-81C2-30AF9483290D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {08245AFD-600F-4B7C-BA9D-AB6A00652E17}
